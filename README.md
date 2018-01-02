@@ -3,7 +3,7 @@ A small app that shows the current weeknumber
 
 ## Download
 Download the latest release via:
-https://github.com/MichielJacobs/Weeknumber/wiki
+https://github.com/MichielJacobs/Weeknumber/releases
 
 ## Screenshots
 ### Screenshot on Windows:
