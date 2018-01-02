@@ -15,3 +15,7 @@ https://github.com/MichielJacobs/Weeknumber/releases
 ## Detailed info and help
 Check the wiki:
 https://github.com/MichielJacobs/Weeknumber/wiki
+
+## Donate
+If you like this project, you can give me a cup of coffee :)
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](http://paypal.me/MichielJacobs)
