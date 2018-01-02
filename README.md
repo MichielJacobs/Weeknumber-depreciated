@@ -16,6 +16,11 @@ https://github.com/MichielJacobs/Weeknumber/releases
 Check the wiki:
 https://github.com/MichielJacobs/Weeknumber/wiki
 
+## License
+Copyright (c) Michiel Jacobs. All rights reserved.
+
+Licensed under the [GPL-3.0](https://github.com/MichielJacobs/Weeknumber/blob/master/LICENSE) License.
+
 ## Donate
 If you like this project, you can give me a cup of coffee :)
 
