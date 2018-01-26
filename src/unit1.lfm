@@ -1,11 +1,12 @@
 object TFWeeknumber: TTFWeeknumber
-  Left = 333
+  Left = 361
   Height = 147
-  Top = 125
-  Width = 241
+  Top = 148
+  Width = 277
+  BorderIcons = [biSystemMenu]
   Caption = 'Weeknumber'
   ClientHeight = 147
-  ClientWidth = 241
+  ClientWidth = 277
   Icon.Data = {
     59CE01000000010009000000000001002000131E000096000000808000000100
     200028080100A91E0000404000000100200028420000D1260100303000000100
@@ -3708,9 +3709,9 @@ object TFWeeknumber: TTFWeeknumber
     0000000000000000000000000000000000000000000000000000000000
   }
   OnCreate = FormCreate
-  LCLVersion = '1.6.4.0'
+  LCLVersion = '1.8.0.6'
   object btnStartApp: TButton
-    Left = 0
+    Left = 16
     Height = 25
     Top = 104
     Width = 240
@@ -3719,16 +3720,16 @@ object TFWeeknumber: TTFWeeknumber
     TabOrder = 0
   end
   object LblStandardInfo: TLabel
-    Left = 80
+    Left = 8
     Height = 15
     Top = 128
-    Width = 93
-    Caption = 'michieljacobs.net'
+    Width = 257
+    Caption = 'https://github.com/MichielJacobs/Weeknumber'
     ParentColor = False
   end
   object lblWeekNumber: TLabel
     AnchorSideTop.Side = asrBottom
-    Left = 96
+    Left = 120
     Height = 75
     Top = 16
     Width = 50
@@ -3746,5 +3747,11 @@ object TFWeeknumber: TTFWeeknumber
     OnClick = TTIWeeknumberClick
     left = 192
     top = 112
+  end
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = FormCreate
+    left = 21
+    top = 41
   end
 end

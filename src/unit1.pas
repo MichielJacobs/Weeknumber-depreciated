@@ -16,6 +16,7 @@ type
     btnStartApp: TButton;
     lblWeekNumber: TLabel;
     LblStandardInfo: TLabel;
+    Timer1: TTimer;
     TTIWeeknumber: TTrayIcon;
     procedure btnStartAppClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -28,6 +29,7 @@ type
 
 var
   TFWeeknumber: TTFWeeknumber;
+  Appvisible: Boolean = true;
 
 implementation
 
@@ -37,23 +39,33 @@ implementation
 
 procedure TTFWeeknumber.TTIWeeknumberClick(Sender: TObject);
 begin
-  TFWeeknumber.Show;      // Show the weeknumer app after click on systrayicon
+  if Appvisible then
+  begin
+        TFWeeknumber.hide;       // Hide the weeknumer app after click on systrayicon
+        Appvisible:= false;
+  end
+  else
+  begin
+        TFWeeknumber.show;       // Show the weeknumer app after click on systrayicon
+        Appvisible := true;
+  end;
 end;
 
 procedure TTFWeeknumber.btnStartAppClick(Sender: TObject);
 begin
-
-  TTIWeeknumber.Icon.LoadFromFile('ico/' + IntToStr(WeekOfTheYear(Now)) +'.ico');      //Set the correct icon file
-  TTIWeeknumber.Hint := 'Current weeknumber: ' + IntToStr(WeekOfTheYear(Now));
-
-
   TTIWeeknumber.Show;    // show the system tray icon
   TFWeeknumber.Hide;     // hide main app window
+  Appvisible := false;
 end;
 
 procedure TTFWeeknumber.FormCreate(Sender: TObject);
 begin
-     LblWeekNumber.Caption := IntToStr((WeekOfTheYear(Now))); //Set the weeknumber in the main application window
+    TTIWeeknumber.Icon.LoadFromFile('ico/' + IntToStr(WeekOfTheYear(Now)) +'.ico');      //Set the correct icon file
+    TTIWeeknumber.Hint := 'Current weeknumber: ' + IntToStr(WeekOfTheYear(Now)) + LineEnding + 'Current Time: ' + FormatDateTime('DDDD, dd MMMM YYYY HH:MM', Now);         //Set help text to sysicon
+
+    LblWeekNumber.Caption := IntToStr((WeekOfTheYear(Now))); //Set the weeknumber in the main application window
+
+    TTIWeeknumber.Show;    // show the system tray icon
 end;
 
 
