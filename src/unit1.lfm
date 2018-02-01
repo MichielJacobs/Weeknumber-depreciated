@@ -3749,7 +3749,6 @@ object TFWeeknumber: TTFWeeknumber
     top = 112
   end
   object Timer1: TTimer
-    Interval = 10
     OnTimer = FormCreate
     left = 21
     top = 41
