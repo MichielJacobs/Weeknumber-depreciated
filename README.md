@@ -7,7 +7,7 @@ https://github.com/MichielJacobs/Weeknumber/releases
 
 ## Screenshots
 ### Screenshot on Windows:
-![Screenshot Windows](https://github.com/MichielJacobs/Weeknumber/blob/master/.github/screenshots/windows.png?raw=true)
+![Screenshot Windows](https://github.com/MichielJacobs/Weeknumber/blob/master/.github/screenshots/windows.png?raw=true) 
 
 ### Screenshot on Linux:
 ![Screenshot Linux](https://github.com/MichielJacobs/Weeknumber/blob/master/.github/screenshots/linux.png?raw=true)
